@@ -1,7 +1,5 @@
 import { CiSearch } from "react-icons/ci";
 import Image from "next/image";
-import CategoryIcon from "./CategoryIcon";
-import { CATEGORIES } from "@/constants";
 
 const Header: React.FC = () => {
     return (
@@ -84,13 +82,6 @@ const Header: React.FC = () => {
             </div>
         <div/>
         </nav>
-        <div className="flex items-center gap-9 justify-center">
-            {
-                CATEGORIES.map((item, index) => (
-                    <CategoryIcon key={index} src={item.src} alt={item.alt} />
-            ))
-            }
-        </div>
     </header>
     ); 
 };

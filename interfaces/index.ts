@@ -23,4 +23,5 @@ export interface PropertyProps {
     };
     image: string;
     discount: string;
+    description: string;
 }
