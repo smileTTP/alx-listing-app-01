@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const Header: React.FC = () => {
     return (
-    <header className="sticky w-full">
-        <div className="bg-[#34967C] text-white flex justify-center gap-3 px-1 py-1 items-center sm:h-[92px] lg:h-[47px]" > 
+    <header className="sticky max-w-[1728px] min-w-[430px]">
+        <div className="bg-[#34967C] text-white flex justify-center gap-3 px-1 py-1 items-center min-h-[47px] max-h-[92px]" > 
             <div>
                 <Image src={"/assets/icons/Case Minimalistic.svg"} alt="case" width={24} height={24} />
             </div>
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
                     <Image src={"/assets/Logo Showcase.png"} alt="alx logo" width={58} height={37} />
                 </div>
             </div>
-            <div className="flex justify-center space-x-4 w-[737px] h-[58px] border border-[#F6F6F6] rounded-full">
+            <div className="flex justify-center space-x-4 max-w-[1728px] max-h-[88px] min-w-[430px] border border-[#F6F6F6] rounded-full">
             <div className="flex items-center">
             <div className="space-y-1 min-w-72">
                 <h6 className="text-[14px]">Location</h6>
