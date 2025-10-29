@@ -28,7 +28,7 @@ export default function Home() {
           {
             PROPERTYLISTINGSAMPLE.map((item, index) => (
               <div key={index} className="px-4 py-6">
-              <Card image={item.image} name={item.name} address={item.address} rating={item.rating} offers={item.offers} price={item.price} category={item.category} discount={""} description={""}/>
+              <Card image={item.image} name={item.name} address={item.address} rating={item.rating} offers={item.offers} price={item.price} category={item.category} discount={item.discount} description={item.description} images={item.images}/>
               </div>
             ))
           }

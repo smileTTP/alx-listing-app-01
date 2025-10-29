@@ -22,6 +22,7 @@ export interface PropertyProps {
         occupants: string;
     };
     image: string;
+    images: string[];
     discount: string;
     description: string;
 }

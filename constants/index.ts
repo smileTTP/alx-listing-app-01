@@ -38,6 +38,11 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
       occupants: "2-4"
     },
     image: "/assets/images/Image 2.jpg",
+    images: [
+      "/assets/images/Arrecife 2.jpg",
+      "/assets/images/Arrecife 3.jpg",
+      "/assets/images/Arrecife 4.jpg"
+    ],
     discount: "60",
     description: ""
   },
@@ -57,6 +62,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
       occupants: "3"
     },
     image: "/assets/images/Image 3.jpg",
+    images: [],
     discount: "",
     description: ""
   },
@@ -76,6 +82,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
       occupants: "6"
     },
     image: "/assets/images/Image 4.jpg",
+    images: [],
     discount: "",
     description: ""
   },
@@ -95,6 +102,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
       occupants: "2"
     },
     image: "/assets/images/Image 5.jpg",
+    images: [],
     discount: "15",
     description: ""
   },
@@ -114,6 +122,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
       occupants: "12"
     },
     image: "/assets/images/Image 6.jpg",
+    images: [],
     discount: "20",
     description: ""
   },
@@ -133,6 +142,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
       occupants: "12"
     },
     image: "/assets/images/Image 7.jpg",
+    images: [],
     discount: "",
     description: ""
   },
