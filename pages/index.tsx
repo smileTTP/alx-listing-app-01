@@ -1,4 +1,4 @@
-import Card from "@/components/layout/Card";
+import Card from "@/components/common/Card";
 import CategoryIcon from "@/components/layout/CategoryIcon";
 import { CATEGORIES } from "@/constants";
 import { PROPERTYLISTINGSAMPLE } from "@/constants";
