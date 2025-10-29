@@ -1,5 +1,7 @@
+import Card from "@/components/layout/Card";
 import CategoryIcon from "@/components/layout/CategoryIcon";
 import { CATEGORIES } from "@/constants";
+import { PROPERTYLISTINGSAMPLE } from "@/constants";
 
 export default function Home() {
   return (
@@ -21,6 +23,13 @@ export default function Home() {
             The best prices for over 2 million properties worldwide
             </p>
         </div>
+        </div>
+        <div>
+          {
+            PROPERTYLISTINGSAMPLE.map((item, index) => (
+              <Card key={index} image={item.image} name={item.name} address={item.address} rating={item.rating} offers={item.offers} price={item.price} category={item.category} discount={""} description={""}/>
+            ))
+          }
         </div>
     </div>
   );
