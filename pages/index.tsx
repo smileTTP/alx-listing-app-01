@@ -24,10 +24,12 @@ export default function Home() {
             </p>
         </div>
         </div>
-        <div>
+        <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2">
           {
             PROPERTYLISTINGSAMPLE.map((item, index) => (
-              <Card key={index} image={item.image} name={item.name} address={item.address} rating={item.rating} offers={item.offers} price={item.price} category={item.category} discount={""} description={""}/>
+              <div key={index} className="px-4 py-6">
+              <Card image={item.image} name={item.name} address={item.address} rating={item.rating} offers={item.offers} price={item.price} category={item.category} discount={""} description={""}/>
+              </div>
             ))
           }
         </div>
