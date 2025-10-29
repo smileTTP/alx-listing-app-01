@@ -28,28 +28,31 @@ const Card = ({image, name, address, rating, offers, price, category}: PropertyP
                 <p className="font-semibold">{rating}</p>
             </div>
             </div>
-            <div>
-            <div className="text-[12.95px]">
+            <div className="flex justify-between items-end">
+            <div className="w-[167px] h-[37px]">
+            <div className="p-2 flex justify-center gap-2 mt-2 text-[12.95px] border border-[#E9E9E9] rounded-full ">
+                <Image src={'/assets/icons/bed.svg'} alt={"bed"} width={19.76436996459961} height={19.76436996459961}/>
                 <div>
-                    <Image src={'/assets/icons/bed.svg'} alt={"bed"} width={19.76436996459961} height={19.76436996459961}/>
                     {offers.bed}
                 </div>
+                <Image src={'/assets/icons/bathtub.svg'} alt={"bathtub"} width={19.76436996459961} height={19.76436996459961}/>
                 <div>
-                    <Image src={'/assets/icons/bathtub.svg'} alt={"bathtub"} width={19.76436996459961} height={19.76436996459961}/>
                     {offers.shower}
                 </div>
+                <Image src={'/assets/icons/people.svg'} alt={"people"} width={19.76436996459961} height={19.76436996459961}/>
                 <div>
-                    <Image src={'/assets/icons/people.svg'} alt={"people"} width={19.76436996459961} height={19.76436996459961}/>
                     {offers.occupants}
                 </div>
             </div>
-            <div>
+            </div>
+            <div className="flex items-end">
                 <p className="text-[22px] font-semibold">${price}</p>
                 <p className="text-[14px] font-semibold text-gray-500">/n</p>
-                </div>
+            </div>
             </div>
         </Link>
         </div>
     );
 }
+
 export default Card;

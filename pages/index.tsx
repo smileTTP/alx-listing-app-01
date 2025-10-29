@@ -33,6 +33,14 @@ export default function Home() {
             ))
           }
         </div>
+        <div className="flex justify-center py-20 text-[20px] text-medium">
+          <div className="flex flex-col items-center">
+          <button type="button" className="bg-black px-6 py-3 h-[25] w-[106] rounded-full text-white text-nowrap text-center">
+            Show more
+          </button>
+          <p className="text-black text-nowrap py-4">Click to see more listings</p>
+          </div>
+        </div>
     </div>
   );
 }
