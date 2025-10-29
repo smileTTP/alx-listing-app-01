@@ -1,5 +1,6 @@
 import { CiSearch } from "react-icons/ci";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header: React.FC = () => {
     return (
@@ -20,9 +21,9 @@ const Header: React.FC = () => {
         </div>
         <nav className="border-[#EBEBEB] top-0 bg-white flex justify-center space-x-15 py-3 px-3">
             <div className="border-[#EBEBEB] bg-white mx-auto container">
-                <div>
+                <Link href={"/"}>
                     <Image src={"/assets/Logo Showcase.png"} alt="alx logo" width={58} height={37} />
-                </div>
+                </Link>
             </div>
             <div className="flex justify-center space-x-4 max-w-[1728px] max-h-[88px] min-w-[430px] border border-[#F6F6F6] rounded-full">
             <div className="flex items-center">
