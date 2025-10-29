@@ -6,7 +6,7 @@ import Link from "next/link";
 const Card = ({image, name, address, rating, offers, price, category}: PropertyProps) => {
     return (
         <div className="w-[378.5572204589844px] h-[422.6997985839844px]">
-        <Link href="/">
+        <Link href={`/property/${name}`}>
             <Image src={image} alt={name} width={380} height={255} className={"rounded-2xl"}/>
             <div className="p-2 flex gap-2 mt-2 text-[12.16px]">
                 {
