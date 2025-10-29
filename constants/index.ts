@@ -98,44 +98,44 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
     discount: "15",
     description: ""
   },
-  // {
-  //   name: "Riverside Cabin",
-  //   address: {
-  //     state: "Queenstown",
-  //     city: "Otago",
-  //     country: "New Zealand"
-  //   },
-  //   rating: 4.77,
-  //   category: ["Riverside", "Private Dock", "Free Kayaks"],
-  //   price: 2800,
-  //   offers: {
-  //     bed: "3",
-  //     shower: "2",
-  //     occupants: "4-6"
-  //   },
-  //   image: "https://example.com/image5.jpg",
-  //   discount: "20",
-  //   description: ""
-  // },
-  // {
-  //   name: "Modern Beachfront Villa",
-  //   address: {
-  //     state: "Sidemen",
-  //     city: "Bali",
-  //     country: "Indonesia"
-  //   },
-  //   rating: 4.95,
-  //   category: ["Beachfront", "Private Pool", "Chef Service"],
-  //   price: 5000,
-  //   offers: {
-  //     bed: "5",
-  //     shower: "4",
-  //     occupants: "8-10"
-  //   },
-  //   image: "https://example.com/image6.jpg",
-  //   discount: "",
-  //   description: ""
-  // },
+  {
+    name: "Gokce Gemile Estate",
+    address: {
+      state: "",
+      city: "Kayaköy",
+      country: "Turkey"
+    },
+    rating: 4.76,
+    category: ["Top Villa", "Self CheckIn", "Free Reschedule"],
+    price: 980,
+    offers: {
+      bed: "6",
+      shower: "6",
+      occupants: "12"
+    },
+    image: "/assets/images/Image 6.jpg",
+    discount: "20",
+    description: ""
+  },
+  {
+    name: "Luxury 1000 sqm Villa...",
+    address: {
+      state: "",
+      city: "Marrakech",
+      country: "Morocco"
+    },
+    rating: 4.76,
+    category: ["Top Villa", "Self CheckIn", "Free Reschedule"],
+    price: 1430,
+    offers: {
+      bed: "6",
+      shower: "6",
+      occupants: "12"
+    },
+    image: "/assets/images/Image 7.jpg",
+    discount: "",
+    description: ""
+  },
   // {
   //   name: "Lakeside Chalet",
   //   address: {
