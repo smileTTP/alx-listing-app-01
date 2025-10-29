@@ -6,28 +6,44 @@ const Card = ({image, name, address, rating, offers, price, category}: PropertyP
     return (
         <div className="w-[378.5572204589844px] h-[422.6997985839844px]">
             <Image src={image} alt={name} width={380} height={255} className={"rounded-2xl"}/>
-            <div className="grid grid-cols-3 text-[12.16px]">
+            <div className="p-2 flex gap-2 mt-2 text-[12.16px]">
                 {
                 category.map((item, index) => (
-                    <div key={index}>{item}</div>
+                    <div key={index} className="flex justify-center  items-center bg-[#F9F9F9] px-3 w-auto h-[27px] rounded-full">
+                    <p>{item}</p>
+                    </div>
                 ))
                 }
             </div>
+            <div className="flex items-center justify-between">
             <div>
                 <h3 className="font-bold text-[22px]">{name}</h3>
+                <h4 className="text-gray-400 text-[17px]">{address.state}, {address.city}, {address.country}</h4>
+            </div>
+            <div className="flex items-center">
+                <Image src={'/assets/icons/star.png'} alt={"star"} width={19.818126678466797} height={18.848159790039062}/>
+                <p className="font-semibold">{rating}</p>
+            </div>
+            </div>
+            <div>
+            <div className="text-[12.95px]">
                 <div>
-                    <Image src={'/assets/icons/star.png'} alt={"star"} width={19.818126678466797} height={18.848159790039062}/>
-                    <p className="font-semibold">{rating}</p>
+                    <Image src={'/assets/icons/bed.svg'} alt={"bed"} width={19.76436996459961} height={19.76436996459961}/>
+                    {offers.bed}
+                </div>
+                <div>
+                    <Image src={'/assets/icons/bathtub.svg'} alt={"bathtub"} width={19.76436996459961} height={19.76436996459961}/>
+                    {offers.shower}
+                </div>
+                <div>
+                    <Image src={'/assets/icons/people.svg'} alt={"people"} width={19.76436996459961} height={19.76436996459961}/>
+                    {offers.occupants}
                 </div>
             </div>
-            <h4 className="text-gray-400 text-[17px]">{address.state}, {address.city}, {address.country}</h4>
             <div>
-            <div>
-                <div>{offers.bed}</div>
-                <div>{offers.shower}</div>
-                <div>{offers.occupants}</div>
-            </div>
-            <div>{price}</div>
+                <p className="text-[22px] font-semibold">${price}</p>
+                <p className="text-[14px] font-semibold text-gray-500">/n</p>
+                </div>
             </div>
         </div>
     );
