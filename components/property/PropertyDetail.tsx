@@ -40,6 +40,9 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
             </div>
         </div>
 
+        <div className="grid grid-cols-3">
+        
+        <div className="col-span-2">
         {/* Description */}
         <div className="mt-4">
         <h2 className="text-2xl font-semibold">Description</h2>
@@ -57,7 +60,13 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
             ))}
         </ul>
         </div>
+
+        </div>
+        
+        <div>
         <BookingSection price={property.price} discount={property.discount}/>
+        </div>
+        </div>
         <ReviewSection reviews={[]}/>
     </div>
     );
