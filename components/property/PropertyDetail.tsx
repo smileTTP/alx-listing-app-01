@@ -42,31 +42,33 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
 
         <div className="grid grid-cols-3">
         
-        <div className="col-span-2">
-        {/* Description */}
-        <div className="mt-4">
-        <h2 className="text-2xl font-semibold">Description</h2>
-        <p>{property.description}</p>
-        </div>
+            <div className="col-span-2">
+                {/* Description */}
+                <div className="mt-4">
+                <h2 className="text-2xl font-semibold">Description</h2>
+                <p>{property.description}</p>
+                </div>
 
-        {/* Amenities */}
-        <div className="mt-4">
-        <h2 className="text-2xl font-semibold">What this place offers</h2>
-        <ul className="flex flex-wrap space-x-4">
-            {property.category.map((amenity, index) => (
-            <li key={index} className="bg-gray-200 p-2 rounded-md">
-                {amenity}
-            </li>
-            ))}
-        </ul>
-        </div>
+                {/* Amenities */}
+                <div className="mt-4">
+                <h2 className="text-2xl font-semibold">What this place offers</h2>
+                <ul className="flex flex-wrap space-x-4">
+                    {property.category.map((amenity, index) => (
+                    <li key={index} className="bg-gray-200 p-2 rounded-md">
+                    {amenity}
+                    </li>
+                    ))}
+                </ul>
+                </div>
+            </div>
+
+            <div>
+                <BookingSection price={property.price} discount={property.discount}/>
+            </div>
 
         </div>
-        
-        <div>
-        <BookingSection price={property.price} discount={property.discount}/>
-        </div>
-        </div>
+        <br/>
+        <h3 className="text-[31px] font-bold flex items-center space-x-2"><FaStar className="text-yellow-500"/> <p>{property.rating}</p></h3>
         <ReviewSection reviews={[]}/>
     </div>
     );
