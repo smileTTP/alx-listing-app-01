@@ -3,6 +3,8 @@ import Image from "next/image";
 import { FaStar } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaUserCircle } from 'react-icons/fa';
+import BookingSection from "./BookingSection";
+import ReviewSection from "./ReviewSection";
 
 const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => {
     return (
@@ -37,7 +39,7 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
             <div>{property.offers.occupants} guests</div>
             </div>
         </div>
-        
+
         {/* Description */}
         <div className="mt-4">
         <h2 className="text-2xl font-semibold">Description</h2>
@@ -55,6 +57,8 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
             ))}
         </ul>
         </div>
+        <BookingSection price={property.price} discount={property.discount}/>
+        <ReviewSection reviews={[]}/>
     </div>
     );
 };

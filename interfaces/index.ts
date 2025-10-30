@@ -23,6 +23,6 @@ export interface PropertyProps {
     };
     image: string;
     images: string[];
-    discount: string;
+    discount: number;
     description: string;
 }
