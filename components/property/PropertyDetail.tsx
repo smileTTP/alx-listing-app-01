@@ -41,8 +41,18 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
         </div>
 
         <div className="grid grid-cols-3">
-        
+            
             <div className="col-span-2">
+                <div className="flex justify-between p-4">
+                <div className="flex justify-start space-x-8 ">
+                    <div>Description</div>
+                    <div>What we offer</div>
+                    <div>Reviews</div>
+                    <div>About host</div>
+                </div>
+                    <div>Published July 01, 2024</div>
+                </div>
+                
                 {/* Description */}
                 <div className="mt-4">
                 <h2 className="text-2xl font-semibold">Description</h2>
