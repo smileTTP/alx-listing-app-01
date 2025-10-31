@@ -1,9 +1,11 @@
 import { useState } from "react";
 
+// Define a type for a single tab entry.
 type TabConfigEntry = {
     header: string;
     component: React.ReactNode;
 };
+// define a type for the component
 type TabsProps = {
     config: TabConfigEntry[];
 };
