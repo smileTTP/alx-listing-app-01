@@ -5,6 +5,10 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaUserCircle } from 'react-icons/fa';
 import BookingSection from "./BookingSection";
 import ReviewSection from "./ReviewSection";
+import Description from "./Description";
+import Amenity from "./Amenity";
+import AboutHost from "./AboutHost";
+import Tabs from "./Tabs";
 
 const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => {
     return (
@@ -43,33 +47,12 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
         <div className="grid grid-cols-3">
             
             <div className="col-span-2">
-                <div className="flex justify-between p-4">
-                <div className="flex justify-start space-x-8 ">
-                    <div>Description</div>
-                    <div>What we offer</div>
-                    <div>Reviews</div>
-                    <div>About host</div>
-                </div>
-                    <div>Published July 01, 2024</div>
-                </div>
-                
-                {/* Description */}
-                <div className="mt-4">
-                <h2 className="text-2xl font-semibold">Description</h2>
-                <p>{property.description}</p>
-                </div>
-
-                {/* Amenities */}
-                <div className="mt-4">
-                <h2 className="text-2xl font-semibold">What this place offers</h2>
-                <ul className="flex flex-wrap space-x-4">
-                    {property.category.map((amenity, index) => (
-                    <li key={index} className="bg-gray-200 p-2 rounded-md">
-                    {amenity}
-                    </li>
-                    ))}
-                </ul>
-                </div>
+                <Tabs config = {[
+                    {header: "Description", component: <Description description={property.description}/>},
+                    {header: "What we offer", component: <Amenity amenities={property.category}/>},
+                    {header: "Reviews", component: <ReviewSection reviews={[]}/>},
+                    {header: "About host", component: <AboutHost/>} 
+                    ]}/>
             </div>
 
             <div>
@@ -78,8 +61,7 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
 
         </div>
         <br/>
-        <h3 className="text-[31px] font-bold flex items-center space-x-2"><FaStar className="text-yellow-500"/> <p>{property.rating}</p></h3>
-        <ReviewSection reviews={[]}/>
+        {/* <h3 className="text-[31px] font-bold flex items-center space-x-2"><FaStar className="text-yellow-500"/> <p>{property.rating}</p></h3> */}
     </div>
     );
 };
