@@ -24,7 +24,7 @@ const Tabs: React.FC<TabsProps> = ({ config }) => {
                     ))
                 }
                 </div>
-                <div>Published July 01, 2024</div>
+                <div className="text-gray-400">Published July 01, 2024</div>
             </div>
 
             <div>
