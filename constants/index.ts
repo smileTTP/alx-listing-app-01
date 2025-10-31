@@ -44,7 +44,37 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
       "/assets/images/Arrecife 4.jpg"
     ],
     discount: 60,
-    description: ""
+    description: "",
+    reviews: [
+      {
+        name: "Kerry",
+        avatar: "/assets/avatars/kerry.jpg",
+        date: new Date("2024-03-12T00:00:00Z"),
+        rating: 4.5,
+        comment: "I simply don’t have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking",
+    },
+    {
+        name: "Pooja",
+        avatar: "/assets/avatars/pooja.jpg",
+        date: new Date("2024-03-21T00:00:00Z"),
+        rating: 4,
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures, ",
+    },
+    {
+        name: "Cindy & Ben",
+        avatar: "/assets/avatars/cindy.jpg",
+        date: new Date("2023-08-10T00:00:00Z"),
+        rating: 4,
+        comment: "I simply don’t have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking",
+    },
+    {
+        name: "Marnie",
+        avatar: "/assets/avatars/marnie.jpg",
+        date: new Date("2023-01-03T00:00:00Z"),
+        rating: 4.5,
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures, ",
+    }
+    ]
   },
   {
     name: "Entire cabin",
@@ -64,7 +94,16 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
     image: "/assets/images/Image 3.jpg",
     images: [],
     discount: 0,
-    description: ""
+    description: "",
+    reviews: [
+      {
+        name: "",
+        avatar: "",
+        date: new Date("2025-10-31T00:00:00Z"),
+        rating: 0,
+        comment: "",
+    }
+    ]
   },
   {
     name: "Earthen home",
@@ -84,7 +123,16 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
     image: "/assets/images/Image 4.jpg",
     images: [],
     discount: 0,
-    description: ""
+    description: "",
+    reviews: [
+      {
+        name: "",
+        avatar: "",
+        date: new Date("2025-10-31T00:00:00Z"),
+        rating: 0,
+        comment: "",
+    }
+    ]
   },
   {
     name: "Private room",
@@ -104,7 +152,16 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
     image: "/assets/images/Image 5.jpg",
     images: [],
     discount: 15,
-    description: ""
+    description: "",
+    reviews: [
+      {
+        name: "",
+        avatar: "",
+        date: new Date("2025-10-31T00:00:00Z"),
+        rating: 0,
+        comment: "",
+    }
+    ]
   },
   {
     name: "Gokce Gemile Estate",
@@ -124,7 +181,16 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
     image: "/assets/images/Image 6.jpg",
     images: [],
     discount: 20,
-    description: ""
+    description: "",
+    reviews: [
+      {
+        name: "",
+        avatar: "",
+        date: new Date("2025-10-31T00:00:00Z"),
+        rating: 0,
+        comment: "",
+    }
+    ]
   },
   {
     name: "Luxury 1000 sqm Villa...",
@@ -144,7 +210,16 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps [] = [
     image: "/assets/images/Image 7.jpg",
     images: [],
     discount: 0,
-    description: ""
+    description: "",
+    reviews: [
+      {
+        name: "",
+        avatar: "",
+        date: new Date("2025-10-31T00:00:00Z"),
+        rating: 0,
+        comment: "",
+    }
+    ]
   },
   // {
   //   name: "Lakeside Chalet",

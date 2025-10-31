@@ -50,7 +50,7 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
                 <Tabs config = {[
                     {header: "Description", component: <Description description={property.description}/>},
                     {header: "What we offer", component: <Amenity amenities={property.category}/>},
-                    {header: "Reviews", component: <ReviewSection reviews={[]}/>},
+                    {header: "Reviews", component: <ReviewSection reviews={property.reviews}/>},
                     {header: "About host", component: <AboutHost/>} 
                     ]}/>
             </div>

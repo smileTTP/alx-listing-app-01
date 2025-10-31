@@ -25,4 +25,13 @@ export interface PropertyProps {
     images: string[];
     discount: number;
     description: string;
+    reviews: Reviews[];
+}
+
+export interface Reviews {
+        name: string;
+        avatar: string;
+        date: Date;
+        rating: number;
+        comment: string;
 }
