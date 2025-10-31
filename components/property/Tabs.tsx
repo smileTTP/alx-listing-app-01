@@ -14,11 +14,11 @@ const Tabs: React.FC<TabsProps> = ({ config }) => {
     const [activeTab, setActiveTab] = useState(0);
     return (
         <div>
-            <div className="flex justify-between p-4">
+            <div className="flex justify-between p-4 text-[17px] font-medium">
                 <div className="flex justify-start space-x-8">
                 {
                     config.map((entry, index) => (
-                        <div className={`tab-header ${activeTab === index ? "active" : ""}`} onClick={() => setActiveTab(index)} key={index}>
+                        <div className={`tab-header ${activeTab === index ? "text-[#34967C] border-b-2 border-[#34967C]" : "text-gray-400 hover:text-gray-600"}`} onClick={() => setActiveTab(index)} key={index}>
                             {entry.header}
                         </div>
                     ))
